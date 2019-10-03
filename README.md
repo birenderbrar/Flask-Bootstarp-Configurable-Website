@@ -6,11 +6,11 @@ development. On the other hand bootstrap is a definate choice for front end in c
 * Flask webframework is used to keep our project lightweighted and dont add unwanted dependancies.  
 * Flask provide very optimize way to handle templates using JINJA templating. In case application has many webpges its always good to 
   use JINJA, I have used it in this project. It reduces lot of repetaion of code and helps to keep front end code clean.
-     ![](weather%20app/images/index.png)
+   ![](layout.png)
 * flask-sqlalchemy is used for data insert and retrival.   
 * You can configure all credentials using configurable file provided in code. 
 * A admin dashboard is designed where admin can see all the data submited by users using contact form, you can this dashboard for other purpose as well. 
-![](weather%20app/images/index.png)
-![](weather%20app/images/index.png)
+![](admin.png)
+![](dashboard.png)
 
 :copyright: Birender Veer Singh
