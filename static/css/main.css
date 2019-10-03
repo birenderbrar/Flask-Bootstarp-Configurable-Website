@@ -1,0 +1,156 @@
+/* navbar */
+.navbar {
+  background-color: grey;
+}
+
+#navbarNavAltMarkup a:hover {
+  color: white;
+}
+
+#heading:hover {
+  color: white;
+}
+
+/* HOME */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  color: green;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+  size: auto;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-caption {
+  color: black;
+}
+
+/* About */
+.about {
+  margin: 4em 0;
+  position: relative;
+}
+
+.about img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%
+}
+
+.about span {
+  display: block;
+  color: #888;
+  position: absolute;
+  left: 70px;
+}
+
+.about .desc {
+  padding: 2em;
+  border-left: 4px solid #A9A9A9;
+}
+
+.about .desc h3 {
+  color: #grey;
+}
+
+.about .desc p {
+  line-height: 2;
+  color: #grey;
+}
+
+/* Services */
+.container .row {
+  padding-bottom: 50px;
+}
+
+.container .row d-block w-100:hover {}
+
+/* Contatc us*/
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #00b3db;
+  border-color: red;
+  /*set the color you want here*/
+}
+
+#contact_title {
+  padding-top: 50px;
+}
+
+.map-container-7 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container-7 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Footer */
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* dashboard */
+#e1 {
+  display: inline-block;
+  margin-right: 10px;
+  color: green;
+  text-decoration: underline;
+}
+.button {
+  display: inline-block;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: green;
+}

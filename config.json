@@ -1,0 +1,10 @@
+{
+  "params":{
+    "local_uri": "provide your local url please",
+    "prod_uri": "please provide you production URL",
+    "gmail_user": "add your gmail please",
+    "gmail_password": "add the gmail's password please",
+    "admin_user":"add your user name",
+    "admin_password":"add your password"
+  }
+}

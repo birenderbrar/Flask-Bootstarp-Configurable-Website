@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Admin pannel</title>
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+
+<body>
+  <html>
+
+  <body>
+    <div class="admin" style="text-align: center;">
+      <h1 id="e1">Data of Contacts</h1>
+      <a href="/logout" class="button" <button class="btn btn-primary"> Logout</button></a>
+    </div>
+    <br>
+    <table border="1" align="center">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>EMAIL</th>
+          <th>SUBJECT</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for Contact in contact %}
+        <tr>
+          <td>{{ Contact.ID }}</td>
+          <td>{{ Contact.Name }}</td>
+          <td>{{ Contact.Email }}</td>
+          <td>{{ Contact.Subject }}</td>
+          <td>{{ Contact.Message }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  </body>
+
+  </html>

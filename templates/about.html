@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- about section -->
+<div class="about" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 style="color:green;">About</h1>
+        <hr class="star-primary">
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <img class="d-block w-100" src="{{ url_for('static', filename='images/dogs.jpg') }}" alt="First slide">
+          <span class="text-justify; text-align:center"> We love pets and we are best in that</span>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 desc">
+          <h3>XYZ Heading</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container tp-5">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">S.N</th>
+          <th scope="col">Name</th>
+          <th scope="col">Speciality</th>
+          <th scope="col">Availbility</th>
+        </tr>
+      </thead>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Eyes</td>
+          <td>Weekdays, 9am to 5pm</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Skin</td>
+          <td>Weekdays, 9am to 5pm</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>Ear</td>
+          <td>Weekdays, 9am to 5pm</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  {% endblock %}
