@@ -38,7 +38,17 @@
 <body class="text-center">
   <link href="{{url_for('static', filename='css/signin.css')}}" rel="stylesheet">
   <form class="form-signin" action="/admin" method="POST">
-    <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+   <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+      {% if messages %}
+        {% for category, message in messages %}
+      <div class="alert alert-{{ category }} alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <!-- <strong>Title</strong> --> {{ message }}
+      </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
     <h1 class="h3 mb-3 font-weight-normal">Admin Pannel</h1>
     <label for="uname" class="sr-only">Email address</label>
     <input type="text" id="uname" name="uname" class="form-control" placeholder="User Name" required autofocus>
