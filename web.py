@@ -1,5 +1,5 @@
 # import required modules
-from flask import Flask, render_template, request, session, redirect
+from flask import Flask, render_template, request, session, redirect,flash
 from flask_sqlalchemy import SQLAlchemy
 import json
 from flask_mail import Mail
@@ -70,6 +70,9 @@ def admin():
             contact = Contact.query.all()
             #contact = Contact.query().order_by(Contact.c.ID.desc()).limit(5)
             return render_template('dashboard.html', contact=contact)
+        else:
+            flash("Please enter right credentials!","warning")
+            return render_template("admin.html")
     return render_template('admin.html')
 
 
